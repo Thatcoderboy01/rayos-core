@@ -213,9 +213,9 @@ void Application::initEnvironments()
         setenv("XDG_CONFIG_DIRS", "/etc/xdg", 1);
 
     // Environment
-    setenv("DESKTOP_SESSION", "Cutefish", 1);
-    setenv("XDG_CURRENT_DESKTOP", "Cutefish", 1);
-    setenv("XDG_SESSION_DESKTOP", "Cutefish", 1);
+    setenv("DESKTOP_SESSION", "RayOS", 1);
+    setenv("XDG_CURRENT_DESKTOP", "RayOS", 1);
+    setenv("XDG_SESSION_DESKTOP", "RayOS", 1);
 
     // GLib's plain-text backend: cutefish-services writes the GTK appearance keys into
     // ~/.config/glib-2.0/settings/keyfile, and no dconf daemon is needed.

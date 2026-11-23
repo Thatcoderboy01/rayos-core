@@ -522,7 +522,7 @@ void ProcessManager::loadAutoStartProcess()
         if (std::filesystem::is_directory(path, error) && std::find(dirs.begin(), dirs.end(), path) == dirs.end())
             dirs.push_back(path);
     }
-    const auto desktops = strings::split(environmentValue("XDG_CURRENT_DESKTOP", "Cutefish"), ':',
+    const auto desktops = strings::split(environmentValue("XDG_CURRENT_DESKTOP", "RayOS"), ':',
                                       strings::SplitBehavior::SkipEmptyParts);
     const auto execList = autostartEntries(dirs, desktops);
 
